@@ -1,0 +1,63 @@
+body{
+    margin: 0 20px;
+}
+.italic{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+.textc{
+    text-align: center;
+}
+.fs20{
+    font-size: 20px;
+}
+#m1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+h1{
+    text-align: center;
+}
+#abstract{
+    padding: 0px 200px;
+    text-align: justify;
+}
+#article{
+    text-align: justify;
+}
+h2{
+    text-align: center;
+    tab-size: 20px;
+    text-transform: capitalize;
+}
+.pic3{
+    margin: 0 55px;
+}
+img{
+    display: block;
+    align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+td{
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.tablet{
+    text-align: right;
+}
+th{
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
