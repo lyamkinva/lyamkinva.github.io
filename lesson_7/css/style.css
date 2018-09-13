@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box
+}
+.section{
+    text-align: center;
+    margin: 80px 10%;
+    сolor: #333333;
+    font-family: tahoma, sans-serif;
+}
+.section span, strong{
+    font-size: 24px;
+    display: block;
+    text-align: center;
+}
+.section strong{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.main{
+    margin-top: 80px;
+}
+.main .video, .form{
+    display: inline-block;
+    vertical-align: top;
+}
+.main .video{
+    margin-right: 40px;
+}
+.form{
+    border:5px solid #3c3cdd;
+    width: 400px;
+}
+.form span{
+    font-size: 20px;
+    font-weight: 900;
+    margin: 28px auto;
+}
+.form input{
+    display: block;
+    font-size: 18px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 330px;
+}
+button{
+    display: block;
+    background-color: #3c3cdd;
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    font-size: 18px;
+    padding: 20px 55px;
+    margin: 30px auto;
+}
+.footer{
+    margin-top: 120px;
+}
+.footer h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.footer .feature{
+    display: inline-block;
+    margin: 80px 50px 30px 50px;
+    width: 125px;
+}
+.footer p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.clients p{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.clients img{
+    margin: 20px;
+}
