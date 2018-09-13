@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+#footer{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    top: 0;
+}
+#footer a{
+    display: inline-block;
+    color:white;
+    border: 1px solid white;
+    width: 20%;
+    height: 50px;
+    margin-right: -4px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+#content{
+    margin-top: 60px;
+}
