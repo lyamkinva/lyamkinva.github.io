@@ -1,0 +1,29 @@
+/*  Colors */
+/* Basic settings */
+html {
+  font-size: 10px;
+}
+.button {
+  background-color: #fcb203;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+}
+/* Typography */
+section {
+  padding: 10rem 0;
+}
+/* main */
+main {
+  margin: 3rem 0;
+}
+main .header-btn {
+  font-size: 1.2rem;
+}
+main .phone-link {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1a1820;
+}
