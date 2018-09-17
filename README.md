@@ -23,3 +23,5 @@
 [Урок 14](https://lyamkinva.github.io/%D0%A3%D1%80%D0%BE%D0%BA%2014.%20%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%88%D1%80%D0%B8%D1%84%D1%82%D0%BE%D0%B2/ "Описание") - Подключение шрифтов
 
 [Урок 15](https://lyamkinva.github.io/lesson_15/ "Описание") - Псевдоклассы / псевдоэлементы
+
+[Урок 16](https://lyamkinva.github.io/lesson_16/ "Описание") - Псевдоклассы / псевдоэлементы
