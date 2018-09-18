@@ -1,0 +1,340 @@
+/* Fonts */
+@font-face {
+    font-family: 'ProximaNova_bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova_reg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Mixins */
+.bold(){
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.reg(){
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+/*  Colors */
+@btn-color: #fcb203;
+@text: #1a1820;
+@icon-color: #48bd15;
+@danger: #ff0000;
+@bg-light: #f5f5f5;
+@light: #fff;
+@border-input: #dddddd;
+
+/* Basic settings */
+html{
+  font-size: 10px;
+}
+.button{
+  .bold();
+  background-color: @btn-color;
+  color: @light;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: darken(@btn-color, 7%);
+}
+input:focus{
+  outline: none;
+}
+a:hover{
+  text-decoration: none; 
+}
+/* Typography */
+section{
+  padding: 10rem 0;
+}
+
+/* main */
+.main{
+  background: @light url(../img/main-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding: 1.5rem 0 10rem;
+  .phone-link{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    .bold();
+    font-size: 2rem;
+    color: @text;
+  }
+  .header-btn{
+    font-size: 1.2rem;
+  }
+  .header-mob-btn{
+    display: none;
+  }
+  .header-desktop-btn{
+    display: block;
+  }
+  &-content{
+    margin-top: 10rem;
+    &-title{
+    .bold();
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: @text;
+    }
+    &-subtitle{
+    .reg();
+    font-size: 2.4rem;
+    color: @text;
+    margin-top: 5rem;
+    line-height: 1.05;    
+    }
+    &-bar{
+    .reg();
+    font-size: 1.8rem;
+    color:@light;
+    padding: 3rem 4rem 2rem;
+    display: inline-block;
+    text-align: center;
+    margin-top: 6rem;
+    background-color: @icon-color;
+    }
+    &-trigger{  
+    .bold();
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    }
+  }
+  &-form{
+    background-color: @light;
+    padding: 3rem 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    &-title{
+      .reg();
+      font-size: 1.8rem;
+      strong{
+        font-size: 1.9rem;
+      }
+    }
+    &-input{
+      display: block;
+      width: 100%;
+      padding: 1.5rem;
+      border: 1px solid @border-input;
+      border-radius: 5px;
+      margin: 2rem 0;
+      font-size: 1.8rem;
+    }
+    &-label{
+      background-color: @light;
+      padding: 0.5rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      .reg();
+      font-size: 1.3rem;
+    }
+    &-button{
+      display: block;
+      width: 100%;
+      .reg();
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    &-footer{
+      .reg();
+      font-size: 1.3rem;
+    }
+  }
+}
+/*Блок с преимуществами*/
+.features{
+  text-align: center;
+  .section-header{
+    .bold();
+    font-size: 3.6rem;
+  }
+  &-img{
+    height: 31rem;
+    img{
+      display: block;
+      height: 6rem;
+      margin: 12rem auto 6rem;
+    }
+    h3{
+      .bold();
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+    p{
+      display: inline-block;
+      width: 80%;
+      .reg();
+      font-size: 1.4rem;
+    }
+  }
+}
+.slick-active{
+  outline: none;
+}
+.prev{
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/prev-arrow.svg) center no-repeat;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-size: 100%;
+  left: 0;
+  top: 50%;
+  transform: scaleY(-50%);
+  &:focus{
+    outline: none;
+  }
+}
+.next{
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/next-arrow.svg) center no-repeat;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-size: 100%;
+  right: 0;
+  top: 50%;
+  transform: scaleY(-50%);
+  &:focus{
+    outline: none;
+  }
+}
+
+
+@media (max-width: 767px){
+  .main{
+    text-align: center;
+    .phone-link{
+      text-align: center;
+    }
+    .header-desktop-btn{
+    display: none;
+    }
+    .header-mob-btn{
+    display: block;
+    }
+  }
+}
+@media (max-width: 991px){
+  .main-content{
+    &-add{
+    text-align: center;
+    }
+    &-subtitle{
+      display: inline-block;
+    }
+    &-bar{
+      margin-left: 5rem;
+      display: inline-block;
+    }
+  }
+  .main-form{
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 767px){
+  .main-content-bar{
+    display: block;
+    width: 22rem;
+    margin: 2rem auto;
+  }
+}
+/* Mobile friendly */
+@media (max-width: 575px){
+  .main{
+    background: @light url(../img/main-bg.jpg) 0 6rem no-repeat;
+    background-size: cover; 
+    text-align: center;
+    &-logo{
+      margin-top: 6rem;
+    }
+    .phone-link-mob{
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 2rem 0;
+      .phone-link{
+        font-size: 1.4rem;
+        text-align: left;
+      }
+    }
+    .header-desktop-btn{
+    display: none;
+    }
+    .header-mob-btn{
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 1rem 0;
+    button{
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem;
+      }
+    }
+    &-content{
+      margin-top: 4rem;
+      &-title{
+        font-size: 2.2rem;
+      }
+      &-subtitle{
+      font-size: 1.8rem;
+      margin-top: 3rem;
+      }
+      &-bar{
+      margin-top: 3rem;
+      margin-left: 0 auto;
+      }
+      &-trigger{  
+      .bold();
+      font-size: 1.9rem;
+      margin-top: 2rem;
+      }
+    }
+    &-form{
+      padding: 2rem;
+      margin-bottom: 2rem;
+      &-title{
+        font-size: 1.7rem;
+        strong{
+          font-size: 1.7rem;
+        }
+      }
+      &-input{
+        font-size: 1.5rem;
+      }
+      &-footer{
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
