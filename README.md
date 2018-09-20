@@ -24,4 +24,6 @@
 
 [Урок 15](https://lyamkinva.github.io/lesson_15/ "Описание") - Псевдоклассы / псевдоэлементы
 
-[Урок 16](https://lyamkinva.github.io/lesson_16/ "Описание") - Псевдоклассы / псевдоэлементы
+[Урок 16](https://lyamkinva.github.io/lesson_16/ "Описание") - Слайдер
+
+[Урок 17](https://lyamkinva.github.io/lesson_17/ "Описание") - Модальные окна
