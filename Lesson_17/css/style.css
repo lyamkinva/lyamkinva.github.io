@@ -1,0 +1,86 @@
+body {
+  font-family: 'roboto', sans-serif;
+}
+body button:focus {
+  outline: none;
+  cursor: pointer;
+}
+body h1 {
+  font-weight: 900;
+}
+body p {
+  font-weight: 400;
+}
+body .popup-delete {
+  display: block;
+  font-weight: 900;
+  font-size: 20px;
+  height: 50px;
+  width: 500px;
+  margin: 50px auto;
+}
+body .popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body .popup-content {
+  display: inline-block;
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  height: 180px;
+  width: 400px;
+  border-radius: 10px;
+}
+body .popup .popup-close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background-color: #20161f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+}
+body .popup h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #392c38;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+body .popup p {
+  line-height: 30px;
+  margin: 0;
+  padding: 20px 30px;
+  border-bottom: 1px solid #e7e7e7;
+}
+body .popup .popup-btns button {
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  margin: 15px 15px;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+}
+body .popup .popup-btns .yes-btn {
+  background-color: green;
+}
+body .popup .popup-btns .no-btn {
+  background-color: red;
+}
