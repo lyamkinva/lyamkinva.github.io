@@ -1,0 +1,40 @@
+main {
+  text-align: center;
+  font-family: 'Ubuntu';
+  background: url("../img/main-bg.png") no-repeat center;
+  padding: 70px;
+  height: 700px;
+}
+main h1 {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0bbaf0;
+}
+main h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0bbaf0;
+}
+main .acc-header {
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+  background: #0bbaf0;
+  cursor: pointer;
+  padding: 20px;
+  width: 70%;
+  margin-bottom: 5px;
+}
+main .acc-text {
+  display: inline-block;
+  font-size: 22px;
+  color: red;
+  background: #fff;
+  width: 68%;
+  border: 1px solid grey;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: -5px;
+}
