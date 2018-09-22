@@ -1,40 +1,105 @@
-main {
-  text-align: center;
-  font-family: 'Ubuntu';
-  background: url("../img/main-bg.png") no-repeat center;
-  padding: 70px;
-  height: 700px;
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('MyriadPro-Regular.woff2') format('woff2'), url('MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-main h1 {
-  font-size: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #0bbaf0;
-}
-main h2 {
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #0bbaf0;
-}
-main .acc-header {
-  display: inline-block;
-  font-size: 24px;
-  color: #fff;
-  background: #0bbaf0;
+/* Colors */
+button {
   cursor: pointer;
-  padding: 20px;
-  width: 70%;
-  margin-bottom: 5px;
 }
-main .acc-text {
+body {
+  font-family: 'MyriadPro', serif;
+  background: url("../img/main-bg.png") center no-repeat;
+  width: 800px;
+  height: 500px;
+  margin: 20px auto;
+  z-index: -1;
+}
+body .tabb {
   display: inline-block;
-  font-size: 22px;
-  color: red;
+  width: 630px;
+  height: 450px;
+  margin: 25px 85px;
+}
+.nav-tabs {
+  margin-left: 20px;
+  border: none;
+  font-size: 24px;
+  padding: 0;
+  line-height: 1;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background: #03a4d9;
+  color: #fff;
+  border: none;
+}
+.nav-tabs .nav-link {
   background: #fff;
-  width: 68%;
-  border: 1px solid grey;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  margin-top: -5px;
+  color: #000;
+  border-bottom: none;
+}
+.nav-item {
+  margin-left: 10px;
+  z-index: 0;
+}
+.tab-pane {
+  background: #03a4d9;
+  height: 400px;
+  z-index: 2;
+}
+.enter-content {
+  position: relative;
+  display: inline-block;
+  width: 585px;
+  height: 365px;
+  background: #000;
+  margin: 18.5px 22.5px;
+  padding: 40px 0;
+}
+.enter-content h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: red;
+}
+.enter-content input {
+  display: block;
+  margin: 30px 45px;
+  background: #191818;
+  color: #fff;
+  font-size: 24px;
+  padding: 5px 20px;
+}
+.enter-content p {
+  font-size: 15px;
+  color: #c51f03;
+  margin-left: 60px;
+}
+.enter-content .chbx {
+  vertical-align: bottom;
+}
+.enter-content .chbx .form-check {
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.enter-content .chbx span {
+  font-size: 16px;
+  color: #6f6d6d;
+  padding-bottom: 3px;
+}
+.enter-content .form-btn {
+  height: 40px;
+  width: 130px;
+  position: absolute;
+  right: -35px;
+  bottom: 15px;
+  font-size: 20px;
+  color: #fff;
+  background: red;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
 }
