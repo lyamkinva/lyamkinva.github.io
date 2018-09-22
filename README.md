@@ -28,6 +28,6 @@
 
 [Урок 17](https://lyamkinva.github.io/Lesson_17/ "Описание") - Модальные окна
 
-[Урок 18-1](https://lyamkinva.github.io/Lesson_18_tabs/ "Описание") - Табы
+[Урок 18-1](https://lyamkinva.github.io/lesson_18_tabs/ "Описание") - Табы
 
 [Урок 18-2](https://lyamkinva.github.io/lesson_18_acc/ "Описание") - Аккордеон
