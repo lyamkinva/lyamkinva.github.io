@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <title>Гибсолит</title>
 </head>
+
 <body>
 
+
+    <!--Главное окно-->
     <main class="main">
         <div class="container">
             <div class="header">
@@ -22,7 +26,7 @@
                     </div>
 
                     <div class="phone-link-mob col-lg-3 offset-lg-3 col-md-4 col-6">
-                            <a class="phone-link" href="#">+7 495 771 05 08</a>
+                        <a class="phone-link" href="#">+7 495 771 05 08</a>
                     </div>
 
                     <div class="header-desktop-btn col-lg-3 col-md-4 col-6">
@@ -30,9 +34,9 @@
                     </div>
 
                     <div class="header-mob-btn col-lg-3 col-md-4 col-6">
-                        <button class="button header-btn">консультация</button>
+                        <button class="button header-btn popup-btn">консультация</button>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -46,7 +50,8 @@
                     </div>
                     <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-8 offset-md-2">
                         <div class="main-form">
-                            <h2 class="main-form-title">Для расчета точной стоимости <br>закажите <strong>выезд замерщика</strong></h2>
+                            <h2 class="main-form-title">Для расчета точной стоимости <br>закажите <strong>выезд
+                                    замерщика</strong></h2>
                             <form action="#">
                                 <label class="main-form-label" for="#">Ваше имя</label>
                                 <input class="main-form-input" type="text">
@@ -56,14 +61,15 @@
                                 <small class="main-form-footer">Приедем в день обращения*</small>
                             </form>
                         </div>
-                        <small class="main-form-footer">*- выезды на замер осуществляются <br>в рабочие дни Пн-Пт с 9:00 до 18:00</small>
+                        <small class="main-form-footer">*- выезды на замер осуществляются <br>в рабочие дни Пн-Пт с
+                            9:00 до 18:00</small>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    
-<!-- Блок с преимуществами>-->    
+
+    <!-- Блок с преимуществами>-->
     <section class="features">
         <div class="container">
             <h2 class="section-header">Преимущества работы с нами</h2>
@@ -116,27 +122,82 @@
         </div>
     </section>
 
-<!--Модальные окна-->
-<!--получить консультацию-->
+    <!--Блок с ценами-->
+    <section class="price">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4 col-md-12">
+                    <h2 class="price-header">Цены</h2>
+                    <p class="price-subheader">Выберите вариант, который подходит Вам:</p>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <button class="button">Рассчитать точную стоимость</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+                    <div class="price-block">
+                        <h3>Штукатурка вашим материалом</h3>
+                        <img src="img/prices/01.png" alt="Штукатурка вашим материалом">
+                        <p>от <strong>300</strong> руб/м<sup>2</sup></p>
+                        <ul>
+                            <li>Проведение работ</li>
+                            <li>Уборка</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+                    <div class="price-block">
+                        <h3>Штукатурка под шпаклёвку</h3>
+                        <img src="img/prices/02.png" alt="Штукатурка под шпаклёвку">
+                        <p>от <strong>530</strong> руб/м<sup>2</sup></p>
+                        <ul>
+                            <li>Завоз материала и его подъём</li>
+                            <li>Проведение работ</li>
+                            <li>Уборка</li>
+                            <li>Гарантия 2 года</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2">
+                    <div class="price-block">
+                        <h3>Штукатурка под обои</h3>
+                        <img src="img/prices/03.png" alt="Штукатурка под обои">
+                        <p>от <strong>560</strong> руб/м<sup>2</sup></p>
+                        <ul>
+                            <li>Завоз материала и его подъём</li>
+                            <li>Проведение работ</li>
+                            <li>Уборка</li>
+                            <li>Гарантия 2 года</li>
+                            <li>Можно сразу клеить обои</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Модальные окна-->
+
+    <!--получить консультацию-->
     <div class="popup">
         <!--Само белое модальное окно-->
-        <div class="popup-dialog">
-            <!--Cодержимое модального окна-->
-            <div class="popup-content">
-                <button class="popup-close">&times;</button>
-                <h4>Заинтересовало?</h4>
-                <p>Оставьте контактные данные <br>для связи</p>
-                <div class="main-form">
-                    <form action="#">
-                            <label class="main-form-label" for="#">Ваше имя</label>
-                            <input class="main-form-input" type="text">
-                            <label class="main-form-label" for="#">Номер телефона</label>
-                            <input class="main-form-input" type="text">
-                            <label class="main-form-label" for="#">Сообщение</label>
-                            <textarea class="main-form-input" rows="5"></textarea>
-                            <button class="button main-form-button">Оставьте заявку</button>
-                    </form>
-                </div>
+        <div class="popup-content">
+            <button class="popup-close">&times;</button>
+            <h4>Заинтересовало?</h4>
+            <p>Оставьте контактные данные <br>для связи</p>
+            <div class="main-form">
+                <form action="#">
+                    <label class="main-form-label" for="#">Ваше имя</label>
+                    <input class="main-form-input" type="text">
+                    <label class="main-form-label" for="#">Номер телефона</label>
+                    <input class="main-form-input" type="text">
+                    <label class="main-form-label" for="#">Сообщение</label>
+                    <textarea class="main-form-input" rows="5"></textarea>
+                    <button class="button main-form-button">Оставьте заявку</button>
+                </form>
             </div>
         </div>
     </div>
@@ -149,12 +210,12 @@
     <script src="slick/slick.min.js"></script>
     <!--Инициализируем слайдер-->
     <script>
-        $(document).ready(function(){
-            $('.popup-btn').on('click', function(event) {
+        $(document).ready(function () {
+            $('.popup-btn').on('click', function (event) {
                 event.preventDefault();
                 $('.popup').fadeIn();
             });
-            $('.popup-close').on('click', function(event) {
+            $('.popup-close').on('click', function (event) {
                 event.preventDefault();
                 $('.popup').fadeOut();
             });
@@ -163,37 +224,38 @@
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 responsive: [
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 3,
-                        prevArrow: '<button class="prev"></button>',
-                        nextArrow: '<button class="next"></button>',
-                        slidesToScroll: 1
-                }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                        prevArrow: '<button class="prev"></button>',
-                        nextArrow: '<button class="next"></button>',
-                        slidesToScroll: 1
-                }
-                },
-                {
-                    breakpoint: 437,
-                    settings: {
-                        slidesToShow: 1,
-                        prevArrow: '<button class="prev"></button>',
-                        nextArrow: '<button class="next"></button>',
-                        slidesToScroll: 1
-                }
-                }
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 3,
+                            prevArrow: '<button class="prev"></button>',
+                            nextArrow: '<button class="next"></button>',
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            prevArrow: '<button class="prev"></button>',
+                            nextArrow: '<button class="next"></button>',
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 437,
+                        settings: {
+                            slidesToShow: 1,
+                            prevArrow: '<button class="prev"></button>',
+                            nextArrow: '<button class="next"></button>',
+                            slidesToScroll: 1
+                        }
+                    }
                 ]
             });
         });
     </script>
 
 </body>
+
 </html>
