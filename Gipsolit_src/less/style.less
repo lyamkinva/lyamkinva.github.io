@@ -54,8 +54,10 @@ html{
   cursor: pointer;
   background-color: darken(@btn-color, 7%);
 }
-input:focus{
-  outline: none;
+input, button, a{
+  &:focus{
+    outline: none;
+  }
 }
 a:hover{
   text-decoration: none; 
@@ -164,7 +166,9 @@ section{
     }
   }
 }
+
 /*Блок с преимуществами*/
+
 .features{
   text-align: center;
   .section-header{
@@ -229,21 +233,115 @@ section{
   }
 }
 
+/*Блок с ценами*/
 
-@media (max-width: 767px){
-  .main{
-    text-align: center;
-    .phone-link{
-      text-align: center;
+.price{
+  text-align: center;
+  background-color: #27690a;
+  &-header{
+    .bold();
+    font-size: 3.6rem;
+    color: @light;
+    margin-bottom: 4rem;
+  }
+  &-subheader{
+    .reg();
+    color: @light;
+    font-size: 1.5rem;
+    margin-bottom: 8rem;
+  }
+  &-block{
+    background: @light;
+    padding: 3rem;
+    min-height: 59rem;
+    margin-bottom: 1rem;
+    h3{
+      display: block;
+      height: 4rem;
+      .bold();
+      font-size: 1.9rem;
     }
-    .header-desktop-btn{
-    display: none;
+    img{
+      width: 100%;
+      margin-bottom: 3rem;
     }
-    .header-mob-btn{
-    display: block;
+    p{
+      .bold();
+      font-size: 1.9rem;
+      margin-bottom: 3rem;
+      strong{
+        font-size: 3rem;
+      }
+    }
+    ul{
+      padding: 0;
+      list-style-type: none;
+      line-height: 1.667;
+      li{
+        .reg();
+        font-size: 1.8rem;
+        &:before{
+          content: '';
+          display: inline-block;
+          width: 1.4rem;
+          height: 1.4rem;
+          background: #000;
+          margin-right: 1rem;
+          background: url("../img/check.svg") center no-repeat;
+        }
+      }
     }
   }
 }
+
+/* Оформление всплывающих окон */
+/*Оформление всплывающих окон*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  &-close{
+    position: absolute;
+    top: -1.5rem;
+    right: -3rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  &-content {
+    position: fixed;
+    background-color: #ffffff;
+    width: 55rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    padding: 1rem;
+    text-align: center;
+    h4{
+      font-family: 'ProximaNova_bold', sans-serif;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+    }
+    p{
+      font-family: 'ProximaNova_reg', sans-serif;
+      font-size: 1.8rem;
+    }
+    .main-form {
+      margin-bottom: 0;
+      padding: 1rem 6rem;
+    }
+  }
+}
+
 @media (max-width: 991px){
   .main-content{
     &-add{
@@ -257,17 +355,63 @@ section{
       display: inline-block;
     }
   }
+
   .main-form{
     margin-top: 5rem;
   }
-}
-@media (max-width: 767px){
-  .main-content-bar{
-    display: block;
-    width: 22rem;
-    margin: 2rem auto;
+
+  .price{
+    &-header{
+      margin-bottom: 1rem;
+    }
+    &-subheader{
+    margin-bottom: 1rem;
+    }
+    button{
+      margin-bottom: 3rem;
+    }
+    &-block{
+      min-height: 48rem;
+      ul{
+        li{
+        font-size: 1.4rem;
+        }
+
+      }
+    }
   }
 }
+
+@media (max-width: 767px){
+  .main{
+    text-align: center;
+    .phone-link{
+      text-align: center;
+    }
+    .header-desktop-btn{
+    display: none;
+    }
+    .header-mob-btn{
+    display: block;
+    }
+    &-content-bar{
+      display: block;
+      width: 22rem;
+      margin: 2rem auto;
+    }
+  }
+  .popup-content{
+    width: 80%;
+  }
+
+  .main-form{
+    margin-top: 5rem;
+  }
+
+
+}
+
+
 /* Mobile friendly */
 @media (max-width: 575px){
   .main{
@@ -337,4 +481,8 @@ section{
       }
     }
   }
+    .popup-content{
+    width: 90%;
+  }
+
 }
