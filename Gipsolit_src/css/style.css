@@ -227,6 +227,9 @@ section {
   font-size: 1.5rem;
   margin-bottom: 8rem;
 }
+.price-button {
+  font-size: 1.6rem;
+}
 .price-block {
   background: #ffffff;
   padding: 3rem;
@@ -268,6 +271,80 @@ section {
   background: #000;
   margin-right: 1rem;
   background: url("../img/check.svg") center no-repeat;
+}
+/*Блок с отзывами*/
+.feedback {
+  background: url('../img/feedback/feedback-bg.jpg') no-repeat center;
+}
+.feedback h2 {
+  text-align: center;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+  margin-bottom: 10rem;
+}
+.feedback .example-info {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.feedback .example .media {
+  margin-bottom: 2rem;
+}
+.feedback .example .media h5 {
+  font-family: 'ProximaNova_reg', sans-serif;
+  font-size: 1.4rem;
+}
+.feedback .example .media p {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.6rem;
+}
+.feedback .example-text {
+  font-size: 1.5rem;
+  border: 2px solid #48bd15;
+  padding: 1rem;
+  position: relative;
+}
+.feedback .example-text::before {
+  content: '';
+  position: absolute;
+  left: 5rem;
+  top: -2rem;
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid #48bd15;
+  border-bottom: 2px solid #fff;
+  border-top-right-radius: 100%;
+}
+.feedback-slider {
+  background: #ffffff;
+  -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+  position: relative;
+}
+.feedback-slider-btn {
+  position: absolute;
+  width: 5rem;
+  height: 6.5rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #48bd15;
+}
+.feedback-slider-btn img {
+  width: 50%;
+}
+.feedback-slider-btn:focus {
+  outline: none;
+}
+.feedback-slider-prev {
+  position: absolute;
+  left: -5rem;
+}
+.feedback-slider-next {
+  position: absolute;
+  right: -5rem;
 }
 /* Оформление всплывающих окон */
 /*Оформление всплывающих окон*/
