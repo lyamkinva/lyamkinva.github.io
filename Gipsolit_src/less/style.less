@@ -250,6 +250,9 @@ section{
     font-size: 1.5rem;
     margin-bottom: 8rem;
   }
+  &-button{
+    font-size: 1.6rem;
+  }
   &-block{
     background: @light;
     padding: 3rem;
@@ -293,6 +296,83 @@ section{
     }
   }
 }
+
+/*Блок с отзывами*/
+
+.feedback{
+  background: url('../img/feedback/feedback-bg.jpg') no-repeat center;
+  h2{
+    text-align: center;
+    .bold();
+    font-size: 3.6rem;
+    margin-bottom: 10rem;
+  }
+  .example{
+  &-info{
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    }
+    .media{
+      h5{
+        .reg();
+        font-size: 1.4rem;
+      }
+      p{
+        .bold();
+        font-size: 1.6rem;
+      }
+      margin-bottom: 2rem;
+    }
+    &-text{
+      font-size: 1.5rem;
+      border: 2px solid @icon-color;
+      padding: 1rem;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        left: 5rem;
+        top: -2rem;
+        height: 2rem;
+        width: 2rem;
+        border: 2px solid @icon-color;
+        border-bottom: 2px solid #fff;
+        border-top-right-radius: 100%;
+      }
+    }
+  }
+  &-slider{
+    background: @light;
+    box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+    position: relative;
+    &-btn{
+      position: absolute;
+      width: 5rem;
+      height: 6.5rem;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      top: 50%;
+      transform: translateY(-50%);
+      background: @icon-color;
+      img{
+        width: 50%;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    &-prev{
+      position: absolute;
+      left: -5rem;
+    }
+    &-next{
+      position: absolute;
+      right: -5rem;
+    }
+  }
+}
+
 
 /* Оформление всплывающих окон */
 /*Оформление всплывающих окон*/
