@@ -34,7 +34,7 @@
 
 [Урок 19](https://lyamkinva.github.io/Lesson_19/ "Описание") - Анимация в CSS3
 
-[Урок 20](https://lyamkinva.github.io/Lesson_20/ "Описание") - Видео-фон на сайте
+[Урок 20](https://lyamkinva.github.io/lesson_20/ "Описание") - Видео-фон на сайте
 
 [Урок 21]
 
