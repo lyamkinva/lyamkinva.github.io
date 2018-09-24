@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    <title>Аккордеон</title>
+</head>
+<body>
+
+<div class="tabb">
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item">
+            <a href="#enter" class="nav-link active" id="enter-tab" data-toggle="tab">Вход</a>
+        </li>
+        <li class="nav-item">
+            <a href="#reg" class="nav-link" id="reg-tab" data-toggle="tab">Регистрация</a>
+        </li>
+
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="enter">
+            <div class="enter-content">
+                <form action="#">
+                    <input class="animated bounceInDown delay-300ms" type="text" placeholder="Ваше имя">
+                    <input class="animated bounceInDown" type="text" placeholder="Пароль">
+                    <p>Забыли пароль?</p>
+                    <div class="chbx animated bounceInUp">
+                        <input class="form-check" type="checkbox">
+                        <span >Напомнить мне</span>
+                    </div>
+                    <button class="form-btn animated bounceInRight" href="#">Войти</button>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="reg">
+            <div class="enter-content">
+                <h1>
+                    ТУТ НИЧЕГО НЕТ
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
