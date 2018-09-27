@@ -36,9 +36,9 @@
 
 [Урок 20](https://lyamkinva.github.io/lesson_20/ "Описание") - Видео-фон на сайте
 
-[Урок 21]
+[Урок 21](https://lyamkinva.github.io/lesson_21/ "Описание") - Parallax
 
-[Урок 22]
+[Урок 22](https://lyamkinva.github.io/lesson_22/ "Описание") - Гео-карты на сайте
 
 [Урок 23]
 
