@@ -66,6 +66,35 @@ a:hover{
 section{
   padding: 10rem 0;
 }
+/* Формы */
+.form{
+  &-input{
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid @border-input;
+    border-radius: 5px;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+  }
+  &-label{
+    background-color: @light;
+    padding: 0.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    .reg();
+    font-size: 1.3rem;
+  }
+  &-button{
+    display: block;
+    width: 100%;
+    .reg();
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+}
 
 /* main */
 .main{
@@ -133,32 +162,6 @@ section{
       strong{
         font-size: 1.9rem;
       }
-    }
-    &-input{
-      display: block;
-      width: 100%;
-      padding: 1.5rem;
-      border: 1px solid @border-input;
-      border-radius: 5px;
-      margin: 2rem 0;
-      font-size: 1.8rem;
-    }
-    &-label{
-      background-color: @light;
-      padding: 0.5rem;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      .reg();
-      font-size: 1.3rem;
-    }
-    &-button{
-      display: block;
-      width: 100%;
-      .reg();
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
     }
     &-footer{
       .reg();
@@ -254,10 +257,11 @@ section{
     font-size: 1.6rem;
   }
   &-block{
+    position: relative;
     background: @light;
     padding: 3rem;
-    min-height: 59rem;
     margin-bottom: 1rem;
+    min-height: 63rem;
     h3{
       display: block;
       height: 4rem;
@@ -290,27 +294,39 @@ section{
           height: 1.4rem;
           background: #000;
           margin-right: 1rem;
-          background: url("../img/check.svg") center no-repeat;
+          background: url("../img/check.png") center no-repeat;
         }
       }
     }
+  }
+  &-btn{
+    width: 70%;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 /*Блок с отзывами*/
 
 .feedback{
+  position: relative;
   background: url('../img/feedback/feedback-bg.jpg') no-repeat center;
   h2{
     text-align: center;
     .bold();
     font-size: 3.6rem;
     margin-bottom: 10rem;
+    
   }
   .example{
+    
+    z-index: 999;
   &-info{
     font-size: 1.6rem;
     margin-bottom: 4rem;
+    user-select: text;
     }
     .media{
       h5{
@@ -328,6 +344,7 @@ section{
       border: 2px solid @icon-color;
       padding: 1rem;
       position: relative;
+      user-select: text;
       &::before{
         content: '';
         position: absolute;
@@ -370,6 +387,337 @@ section{
       position: absolute;
       right: -5rem;
     }
+  }
+  &-form{
+    background-color: @light;
+    margin-top: 6rem;
+    h3{
+      padding: 5rem 10rem;
+    .bold();
+    font-size: 2.2rem;
+    text-align: center;
+    }
+    label{
+          transform: translateX(-50%) translateY(20%);
+    }
+    &-btn{
+      max-width: 250px;
+      margin: 3rem auto;
+    }
+  }
+  .hand{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 25%;
+  }
+}
+
+/*Блок со схемой работы*/
+.scheme{
+  text-align: center;
+  background: url(../img/hand-2.png) right -10rem bottom -10rem no-repeat;
+  background-size: 65rem;
+  padding-bottom: 0;
+  .section-header{
+    h2{
+      font-size: 3.6rem;
+      .bold();
+      margin-bottom: 4rem;
+    }
+    p{
+      font-size: 1.5rem;
+      .reg();
+      margin-bottom: 5rem;
+    }
+  }
+  &-block{
+    min-height: 30rem;
+    text-align: left;
+    h3{
+      .bold();
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    p{
+      .reg();
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/*Блок все включено*/
+.all-incl{
+  background-color: @bg-light;
+  text-align: center;
+  .section-header{
+    margin-bottom: 10rem;
+    h2{
+      font-size: 4.8rem;
+      color: @icon-color;
+      .bold();
+      margin-bottom: 4rem;
+    }
+    p{
+      font-size: 1.6rem;
+      .reg();
+    }
+  }
+  .media{
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
+    .circle-out{
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid @icon-color;
+    border-radius: 50%;   
+    padding: 0.3rem;
+    margin-right: 1.5rem;
+    .circle-inn{
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background-color: @icon-color;
+      border-radius: 50%;
+      line-height: 4rem;
+      font-size: 2rem;
+      .bold();
+      color: @light;
+      }
+    }
+    h5{
+      font-size: 1.6rem;
+      .bold();
+      margin-bottom: 0;
+    }
+    &-body{
+      text-align: left;
+    }
+  }
+}
+
+/*Мы развеем все сомнения*/
+.danger{
+  position: relative;
+  img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-60%)
+  }
+  .section-header{
+    margin-bottom: 8rem;
+    text-align: center;
+    h2{
+      font-size: 3.6rem;
+    }
+  }
+  h3{
+  font-size: 2.1rem;
+  .bold();
+  }
+  &-list{
+    font-size: 1.6rem;
+    .reg();
+    border: 4px solid black;
+    padding: 4rem;
+    min-height: 46rem;
+    h3{
+      margin-bottom: 3rem;
+    }
+    ul{
+      list-style: none;
+      padding-left: 2.5rem;
+      position: relative;
+      li{
+        margin-bottom: 3rem;
+      }
+      li:before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 0rem;
+        height: 2rem;
+        width: 2rem;
+        //background: red;
+      }
+    }
+    &-bad{
+      border-color: #989898;
+      h3{
+        color: #989898;
+      }
+      ul{
+        li:before{
+          background: url(../img/cancel.png) center no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+    &-good{
+      ul{
+        li:before{
+          background: url(../img/check.png) center no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+}
+
+/*Материалы*/
+.materials{
+  margin-bottom: -2rem;
+  background: url(../img/materials/matelials-bg.jpg) center no-repeat;
+  span{
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+  a{
+    &:hover{
+    color: darken(@icon-color, 10%);
+    }
+    font-size: 2rem;
+    color: @icon-color;
+  }
+  .features-slider{
+    margin-bottom: 4rem;
+  }
+  text-align: center;
+  .section-header{
+    margin-bottom: 6rem;
+    h2{
+      font-size: 3.6rem;
+      .bold();
+      margin-bottom: 4rem;
+    }
+    p{
+      .reg();
+      font-size: 1.9rem;
+    }
+  }
+  &-block{
+    a{
+      &:hover{
+        color: darken(@icon-color, 10%);
+      }
+      font-size: 1.6rem;
+      display: inline-block;
+      color: @icon-color;
+      border-bottom: 1px dotted @icon-color;
+    }
+    &-img{
+      height: 26rem;
+      img{
+        display: block;
+        height: 14rem;
+        margin: 1rem auto;
+      }
+      h3{
+        .bold();
+        font-size: 2rem;
+        margin-bottom: 3rem;
+      }
+      p{
+        display: inline-block;
+        width: 80%;
+        .reg();
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+/*Смотрите как мы работаем*/
+.howwework{
+  background: url(../img/howwework-bg.jpg) center no-repeat;
+  background-size: content;
+  &-btn{
+    font-size: 1.4rem;
+  }
+  &-trigger{
+    .reg();
+    font-size: 2.1rem;  
+    text-transform: none;
+  }
+}
+
+/*Дополнительные услуги*/
+.upsales{
+  margin-top: -2rem;
+  margin-bottom: -4.5rem;
+  text-align: center;
+  background: #286b0a;
+  color: @light;
+  .section-header{
+    margin-bottom: 5rem;
+    h2{
+      font-size: 3.5rem;
+      margin-bottom: 4rem;
+    }
+    p{
+      font-size: 1.7rem;
+    }
+  }
+  &-block{
+    margin-bottom: 4rem;
+    img{
+      margin-bottom: 2.5rem;
+      width: 100%;  
+    }
+    p{
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      .bold();
+    }
+    button{
+      font-size: 1.6rem;
+      width: 14rem;
+    }
+  }
+}
+
+/*Контакты*/
+.contacts{
+  background: url(../img/contacts-bg.jpg) center no-repeat;
+  h2{
+    font-size: 3.5rem;
+    margin-bottom: 6rem;
+  }
+  p{
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+  iframe{
+    margin-bottom: 3rem;
+  }
+  &-form{
+    background: @light;
+    padding: 3rem;
+    text-align: center;
+    h3{
+      font-size: 1.8rem;
+      .reg();
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+/*Footer*/
+footer{
+  .footer-contacts{
+    text-align: center;
+    p{
+      font-size: 1.7rem;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .footer-devlogo{
+    font-size: 1.1rem;
+    text-align: right;
   }
 }
 
@@ -422,6 +770,24 @@ section{
   }
 }
 
+/* Slick dots */
+.slick-dots li button::before {
+    font-size: 50px;
+    color: black;
+    opacity: 0.7;
+  }
+
+  .slick-dots li.slick-active button::before {
+    color:black;
+    opacity: 1;
+  }
+
+@media (max-width: 1200px) {
+  .danger-list{
+    min-height: 55rem;
+  }
+}
+
 @media (max-width: 991px){
   .main-content{
     &-add{
@@ -451,13 +817,73 @@ section{
       margin-bottom: 3rem;
     }
     &-block{
-      min-height: 48rem;
+      min-height: 55rem;
       ul{
         li{
         font-size: 1.4rem;
         }
-
       }
+    }
+    &-btn{
+      bottom: 1rem;
+    }
+  }
+  .all-incl{
+    .section-header{
+      h2{
+        font-size: 3.5rem;
+      }
+    }
+    .media{
+      font-size: 1.2rem;
+      .circle-out{
+      height: 4rem;
+      width: 4rem;
+      .circle-inn{
+        line-height: 3rem;
+        font-size: 2rem;
+        }
+      }
+      h5{
+
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .scheme{
+  text-align: center;
+  background: url(../img/hand-2.png) right -10rem bottom -8rem no-repeat;
+  background-size: 50rem;
+  }
+  .danger{
+    &-list{
+      h3{
+        font-size: 2rem;
+        display: inline-block;
+        height: 4rem;
+      }
+      ul{
+        font-size: 1.4rem;
+      }
+      min-height: 57rem;
+    }
+  }
+  .howwework{
+    background: @bg-light;
+  }
+  .upsales{
+    &-block{
+      p{
+        font-size: 1.6rem;
+      }
+      button{
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .contacts{
+    &-button{
+      font-size: 1.2  rem;
     }
   }
 }
@@ -487,14 +913,81 @@ section{
   .main-form{
     margin-top: 5rem;
   }
-
-
+  .feedback{
+    .fotorama{
+      margin-bottom: 3rem;
+    }
+  }
+  .price{
+    &-block{
+      position: static;
+      min-height: auto;
+      .price-btn{
+        position: static;
+        display: block;
+        margin: 1rem auto;
+        transform: translateX(0);
+      }
+    }
+  }
+  .danger{
+    &-list{
+      min-height: auto;
+      margin-bottom: 2rem;
+    }
+    img{
+      display: none;
+    }
+  }
+  .upsales{
+    &-block{
+      p{
+        font-size: 2rem;
+      }
+      button{
+        font-size: 1.6rem;
+        width: 50%;
+      }
+    }
+  }
+  .contacts{
+    background: none;
+    background-color: @bg-light;
+    h2{
+      margin-bottom: 2rem;
+    }
+  }
+  footer{
+    .footer-logo{
+      display: block;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    .footer-devlogo{
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
 }
 
+@media (max-width: 630px){
+  .feedback-slider{
+    &-prev{
+      position: absolute;
+      left: 0;
+    }
+    &-next{
+      position: absolute;
+      right: 0;
+   }
+  } 
+
+}
 
 /* Mobile friendly */
 @media (max-width: 575px){
   .main{
+    padding-bottom: 2rem;
     background: @light url(../img/main-bg.jpg) 0 6rem no-repeat;
     background-size: cover; 
     text-align: center;
@@ -542,9 +1035,11 @@ section{
       .bold();
       font-size: 1.9rem;
       margin-top: 2rem;
+      margin-bottom: 2rem;
       }
     }
     &-form{
+      margin-top: 0;
       padding: 2rem;
       margin-bottom: 2rem;
       &-title{
@@ -561,8 +1056,172 @@ section{
       }
     }
   }
-    .popup-content{
+
+  .features{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    &-img{
+    max-height: 25rem;
+    }
+  }
+
+  .price{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    &-block-features{
+     display: block; 
+    }
+    &-header{
+      margin-bottom: 1rem;
+    }
+    &-subheader{
+    margin-bottom: 1rem;
+    }
+    button{
+      margin-bottom: 3rem;
+    }
+    &-block{
+      ul{
+        li{
+        font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  
+  .feedback{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    h2{
+      margin-bottom: 1rem;
+    }
+    &-slider-btn{
+    display: none!important;
+    }
+    &-form{
+      h3{
+        padding:0;
+        font-size: 1.6rem;
+        
+      }
+    }
+  }
+
+  .scheme{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: none;
+    .section-header{
+    h2{
+      margin-bottom: 2rem;
+      }
+      p{
+        margin-bottom: 2rem;
+      }
+    }
+    &-block{
+      text-align: center;
+      min-height: auto;
+    }
+
+  }
+
+  .all-incl{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .section-header{
+    margin-bottom: 2rem;
+    h2{
+      margin-bottom: 2rem;
+      font-size: 2.6rem;
+    }
+  }
+  .media{
+    margin-bottom: 3rem;
+  }
+  }
+
+  .danger{
+    padding-top: 2rem;
+    padding-bottom: 0;
+    .section-header{
+      h2{
+        font-size: 2.3rem;
+      }
+      margin-bottom: 2rem;
+    }
+    &-list{
+      h3, ul{
+      font-size: 1.3rem;
+      margin-bottom: 0;
+    }}
+  }
+
+  .materials{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    span{
+      font-size: 1.4rem;
+    }
+    a{
+      font-size: 1.4rem;
+    }
+    .section-header{
+      margin-bottom: 0rem;
+      h2{
+        font-size: 2.4rem;
+      }
+      p{
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .howwework{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .main-content{
+      h1{
+        font-size: 3rem;
+      }
+      p{
+        font-size: 1.8rem; 
+      }
+    }
+  }
+
+  .popup-content{
     width: 90%;
   }
 
+  .slick-slide{
+    img{
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .upsales{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .section-header{
+      margin-bottom: 2rem;
+      h2{
+        font-size: 2.4rem;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .contacts{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    p{
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+    h3{
+      font-size: 1.7rem;
+    }
+  }
 }
